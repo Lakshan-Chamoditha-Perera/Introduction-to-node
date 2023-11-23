@@ -43,7 +43,6 @@ const {format} = require('date-fns');
   It guides you through some steps to create the package.json file and adds the dependencies for your project.
 */
 
-
 console.log(format(new Date(2020, 1, 11), 'MM/dd/yyyy')); //date-fns module
 
 //how to create gitignore file ?
@@ -54,3 +53,12 @@ console.log(format(new Date(2020, 1, 11), 'MM/dd/yyyy')); //date-fns module
   git commit -m "added gitignore"
   git push
 */
+
+// what is dev dependency ?
+/*
+  devDependencies are modules which are only required during development, such as testing or build processes.
+  When you deploy your project to production, these dependencies will not be installed.
+  This is the main difference between dependencies and devDependencies.
+*/
+//npm i nodemon -D //installing nodemon as dev dependency
+
