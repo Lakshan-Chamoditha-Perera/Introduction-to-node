@@ -32,3 +32,9 @@ fs.writeFile(path.join(__dirname, 'files', 'sample.txt'), 'Nice to meet you.', e
     if (error) throw error;
     console.log('Write complete');
 })
+
+//fs module append file
+fs.appendFile(path.join(__dirname, 'files', 'sample.txt'), 'Nice to meet you.', error => {
+    if (error) throw error;
+    console.log('Append complete');
+})
