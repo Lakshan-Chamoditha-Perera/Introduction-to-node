@@ -1,4 +1,5 @@
-console.log('testing')
+const {format} = require('date-fns');
+
 //nodemon
 //npm i -g nodemon
 //nodemon index.js
@@ -8,9 +9,7 @@ console.log('testing')
 /*
   nodemon is a tool that helps develop node.
   js based applications by automatically restarting the node application when file changes in the directory are detected.
-*/
-/*nodemon is starting when input nodemon. it usually looks index.js if file name is not index.js we have to specify it as nodemon [sample.js]*/
-//nodemon is a dev dependency
+  nodemon is starting when input nodemon. it usually looks index.js if file name is not index.js we have to specify it as nodemon [sample.js]*/
 
 //what is npm ?
 /*
@@ -42,4 +41,16 @@ console.log('testing')
 /*
   npm init is a utility that initializes a package.json file for your project.
   It guides you through some steps to create the package.json file and adds the dependencies for your project.
+*/
+
+
+console.log(format(new Date(2020, 1, 11), 'MM/dd/yyyy')); //date-fns module
+
+//how to create gitignore file ?
+/*
+  touch .gitignore
+  echo node_modules > .gitignore
+  git add .
+  git commit -m "added gitignore"
+  git push
 */
