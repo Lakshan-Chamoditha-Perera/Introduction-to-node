@@ -53,7 +53,7 @@ fs.appendFile(path.join(__dirname, 'files', 'sample.txt'), 'Nice to meet you.', 
 
 
 
-//fs module read file
+//fs module read file using promises
 const  fileOps = async () => {
     try {
         const  data = await fs.readFile(path.join(__dirname, 'files', 'sample.txt'));
