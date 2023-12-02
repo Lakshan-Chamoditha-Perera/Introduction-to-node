@@ -1,4 +1,6 @@
 /*
+
+// --------------------------------------------------------------------------------------------
 //How NodeJS differs from vanilla JS
 // 1. NodeJS is not a programming language, it is a runtime environment for JS
 // 2. NodeJS is not a browser, it does not have a DOM
@@ -30,6 +32,7 @@ console.log(path.parse(__filename)); //parse file path
 
 */
 
+// --------------------------------------------------------------------------------------------
 /*
 //math.js
 // import {add} from "./math";
@@ -41,3 +44,32 @@ console.log(divide(1, 2));
 */
 
 //missing apis in js as fetch, dom, localstorage, etc
+
+// --------------------------------------------------------------------------------------------
+//Globals - No Window
+
+// __dirname - path to current directory
+// __filename - file name
+// require - function to use modules (CommonJS)
+// module - info about current module (file)
+// process - info about env where the program is being executed
+
+/*
+setInterval(() => {
+    console.log("Hello World");
+},1000)*/
+// --------------------------------------------------------------------------------------------
+
+//MODULES - encapsulated code (only share minimum)
+
+const john = "john";
+const peter = "peter";
+
+const sayHi = (name) => {
+    console.log(`Hello there ${name}`);
+}
+sayHi("susan");
+sayHi(john);
+
+
+console.log( ); //module object
